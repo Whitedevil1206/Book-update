@@ -1,0 +1,67 @@
+.container {
+  width: 350px;
+}
+
+.area {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.area label {
+  font-family: 'Yusei Magic', sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.area input {
+  height: 40px;
+  letter-spacing: 0.5px;
+  padding: 5px;
+  font-size: medium;
+  font-family: sans-serif;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.area input:focus {
+  border: 2px solid rgb(14, 123, 224);
+  outline: none;
+}
+
+.area textarea {
+  height: 70px;
+  padding: 5px;
+}
+
+.area textarea:focus {
+  border: 2px solid rgb(14, 123, 224);
+  outline: none;
+}
+
+.container button {
+  position: relative;
+  left: 35%;
+  margin-bottom: 10px;
+  padding: 10px 30px;
+  background: rgb(112, 184, 207);
+  border: none;
+  border-radius: 4px;
+  font-size: medium;
+  cursor: pointer;
+  color: white;
+}
+
+.container button:focus {
+  outline: none;
+}
+
+.container button:hover {
+  background: rgb(5, 157, 207);
+}
+
+@media only screen and (max-width: 330px) {
+  .container {
+    width: 300px;
+  }
+}

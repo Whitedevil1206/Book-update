@@ -1,0 +1,40 @@
+.container {
+  margin-top: 10vh;
+  width: 100vw;
+}
+
+.container h5 {
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size: 30px;
+  font-family: 'Yusei Magic', sans-serif;
+  letter-spacing: 1px;
+}
+
+.bform {
+  position: fixed;
+  top: 22%;
+  left: 60%;
+}
+
+@media only screen and (max-width: 770px) {
+  .bform {
+    position: relative;
+    left: 0%;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .bform {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .bform {
+    margin-left: 0px;
+  }
+}

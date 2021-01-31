@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.text {
+  margin: 10px;
+  margin-left: 30px;
+}
+
+.container img {
+  cursor: pointer;
+}
+
+.text h4 {
+  font-family: 'Caveat', cursive;
+  font-size: larger;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.text button {
+  margin-top: 10px;
+  padding: 10px 8px;
+  border-radius: 5px;
+  background: rgba(243, 70, 7, 0.8);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.text button:focus {
+  outline: none;
+}
+
+.text button:hover {
+  background: red;
+}
+
+.divider {
+  position: relative;
+  left: 8%;
+  z-index: 1;
+}
+
+.text h3,
+h4 {
+  max-width: 300px;
+}
+
+@media only screen and (max-width: 430px) {
+  .text h3,
+  h4 {
+    max-width: 250px;
+  }
+
+  .container {
+    margin-left: 30px;
+  }
+}
