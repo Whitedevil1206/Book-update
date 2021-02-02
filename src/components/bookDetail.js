@@ -14,6 +14,12 @@ const BookDetail = ({ click, title, author, id, description, reviews }) => {
 
   const handlePost = (e) => {
     e.preventDefault();
+    if (rev.review === '' || rev.review === 'Enter your Review!') {
+      setRev({
+        review: 'Enter your Review!',
+      });
+      return;
+    }
     setShowPost('Posting..');
     sendPost();
     console.log(rev);
