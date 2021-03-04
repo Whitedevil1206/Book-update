@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../css/navBar.module.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = ({ token }) => {
   const [menu, setMenu] = useState(false);
@@ -18,9 +18,9 @@ const NavBar = ({ token }) => {
             <h3>LOGO</h3>
           </Link>
           <ul className={styles.navlinks}>
-            <Link to="/">Library</Link>
-            <Link to="/yb">Your Books</Link>
-            <Link to="/login">LogIn</Link>
+            <NavLink to="/">Library</NavLink>
+            <NavLink to="/yb">Your Books</NavLink>
+            <NavLink to="/login">LogIn</NavLink>
           </ul>
           <div onClick={handleMenu} className={styles.menu}>
             <div className={styles.line}></div>
@@ -38,9 +38,9 @@ const NavBar = ({ token }) => {
             <h3>LOGO</h3>
           </Link>
           <ul className={styles.navlinks}>
-            <Link to="/">Library</Link>
-            <Link to="/yb">Your Books</Link>
-            <Link to="/profile">Profile</Link>
+            <NavLink to="/">Library</NavLink>
+            <NavLink to="/yb">Your Books</NavLink>
+            <NavLink to="/profile">Profile</NavLink>
           </ul>
           <div onClick={handleMenu} className={styles.menu}>
             <div className={styles.line}></div>
@@ -99,15 +99,15 @@ const NavBar = ({ token }) => {
         </div>
         <div className={styles.lic}>
           <ul className={styles.sidelinks}>
-            <Link onClick={handleMenu} to="/">
+            <NavLink onClick={handleMenu} to="/">
               Library
-            </Link>
-            <Link onClick={handleMenu} to="/yb">
+            </NavLink>
+            <NavLink onClick={handleMenu} to="/yb">
               Your Books
-            </Link>
-            <Link onClick={handleMenu} to="/profile">
+            </NavLink>
+            <NavLink onClick={handleMenu} to="/profile">
               Profile
-            </Link>
+            </NavLink>
           </ul>
         </div>
       </div>

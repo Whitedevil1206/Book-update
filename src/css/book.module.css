@@ -25,3 +25,29 @@
   max-width: 80%;
   margin-top: 10px;
 }
+
+@media only screen and (max-width: 430px) {
+  .container {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 20px;
+  }
+
+  .container img {
+    min-width: 35%;
+  }
+
+  .text {
+    margin: 10px;
+    margin-left: 15px;
+  }
+
+  .title {
+    max-width: 100%;
+  }
+
+  .author {
+    max-width: 100%;
+  }
+}

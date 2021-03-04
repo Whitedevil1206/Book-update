@@ -1,0 +1,11 @@
+footer {
+  background: black;
+  width: 100vw;
+  height: 5vh;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  margin-top: 5px;
+}

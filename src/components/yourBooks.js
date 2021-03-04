@@ -10,7 +10,9 @@ const YourBooks = () => {
   const [token, setToken] = useState(localStorage.getItem('jwtTok'));
 
   useEffect(() => {
-    getBooks();
+    if (token) {
+      getBooks();
+    }
   }, []);
 
   const getBooks = async () => {
@@ -57,6 +59,9 @@ const YourBooks = () => {
         <div className={styles.bform}>
           <AddBookForm />
         </div>
+        <footer>
+          <p>Thanks for visiting !!</p>
+        </footer>
       </div>
     );
   }

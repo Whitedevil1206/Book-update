@@ -17,8 +17,10 @@ const Book = ({ title, author, id, description, reviews }) => {
           height="160px"
           onClick={handleClick}
         ></img>
-        <h3 className={styles.title}>{title}</h3>
-        <h4 className={styles.author}>{author}</h4>
+        <div className={styles.text}>
+          <h3 className={styles.title}>{title}</h3>
+          <h4 className={styles.author}>{author}</h4>
+        </div>
       </div>
     );
   }

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 .books {
   display: flex;
@@ -26,9 +27,140 @@
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+.txtbx {
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+  left: 10%;
+  top: 30%;
+  max-width: 40%;
+  font-family: 'Lora', serif;
+  animation: anim 1s linear forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.txtbx h4 {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.txtbx p {
+  color: white;
+  margin-top: 40px;
+}
+
+.imgbx {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.image {
+  width: 100vw;
+  height: 100%;
+}
+
+.descbx {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 30px;
+  height: 40%;
+  background: rgba(148, 147, 147, 0.4);
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card h4 {
+  color: rgb(140, 81, 250);
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+.card:hover h4 {
+  color: lightgreen;
+}
+
+.card p {
+  margin: 15px;
+  color: white;
+}
+
+@media only screen and (max-width: 770px) {
+  .card h4 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .image {
+    object-fit: cover;
+  }
+}
+
 @media only screen and (max-width: 430px) {
   .books {
     justify-content: space-evenly;
+  }
+
+  .descbx {
+    flex-direction: column;
+    height: 65vh;
+  }
+
+  .card {
+    margin: 20px;
+    height: 100px;
+    width: 240px;
+  }
+
+  .card p {
+    margin: 10px;
+  }
+
+  .image {
+    filter: blur(1px);
+  }
+
+  .txtbx {
+    min-width: 100vw;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+  }
+
+  .txtbx h4 {
+    font-size: 1.8rem;
   }
 }
 
